@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pomodoro Study Guide</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container" style="display: flex; align-items: flex-start; justify-content: space-between; margin: 0;">
+
+        <!-- This part of the toDoList Section -->
+        <div class="toDoListContainer">
+            <h1 style="text-align: center" >Things to do:<img src = "assets/time.png"></h1> 
+                <form onsubmit="addTask(event)" class="row">
+                    <input type="text" id="inputBox" placeholder="Click Enter to add Task" style="font-size: 30px;">
+                </form>
+            <ul id="listContainer">
+            </ul>
+        </div>
+
+<!-- This part is the countdown Section -->
+        <div class="TimerSection">
+            <h1>Countdown<img src="assets/timer3.jpg"></h1>
+            <div class="timer">
+            <p class = "Time" id="Time">25:00</p>
+            <div class="ButtonWrapper">
+                <button id="start" onclick="start()">Start</button>
+                <button id="pause" onclick="pause()">Pause</button>
+                <button id="reset" onclick="reset()">Reset</button> 
+            </div> 
+        </div>
+        </div>
+    </div>    <script src="script.js"></script>
+</body>
+
+</html>
